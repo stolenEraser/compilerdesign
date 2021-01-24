@@ -8,22 +8,22 @@ package Parser;
 /** CUP generated class containing symbol constants. */
 public class sym {
   /* terminals */
-  public static final int MULTICOMMENT = 36;
-  public static final int LEFTBRACKET = 29;
+  public static final int LEFTBRACKET = 31;
   public static final int DISPLAY = 2;
-  public static final int PERIOD = 38;
-  public static final int RIGHTBRACKET = 30;
-  public static final int LPAREN = 24;
+  public static final int PERIOD = 36;
+  public static final int RIGHTBRACKET = 32;
+  public static final int LPAREN = 26;
   public static final int INT = 18;
   public static final int PRINTLN = 17;
   public static final int MINUS = 21;
   public static final int STATIC = 3;
-  public static final int RPAREN = 25;
-  public static final int AND = 37;
-  public static final int RIGHTCURLYBRACKET = 28;
-  public static final int SEMICOLON = 26;
-  public static final int RIGHTANGLEBRACKET = 32;
-  public static final int COMMA = 31;
+  public static final int RPAREN = 27;
+  public static final int RIGHTCURLYBRACKET = 30;
+  public static final int NOT = 25;
+  public static final int SEMICOLON = 28;
+  public static final int AND = 24;
+  public static final int RIGHTANGLEBRACKET = 34;
+  public static final int COMMA = 33;
   public static final int CLASS = 7;
   public static final int PLUS = 20;
   public static final int MAIN = 5;
@@ -36,18 +36,17 @@ public class sym {
   public static final int TRUE = 13;
   public static final int NEW = 15;
   public static final int error = 1;
-  public static final int EXCLAIMATION = 39;
   public static final int BECOMES = 22;
   public static final int VOID = 4;
   public static final int ELSE = 9;
   public static final int WHILE = 10;
   public static final int PUBLIC = 6;
   public static final int STRING = 16;
-  public static final int LEFTCURLYBRACKET = 27;
-  public static final int LEFTANGLEBRACKET = 33;
+  public static final int LEFTANGLEBRACKET = 35;
+  public static final int LEFTCURLYBRACKET = 29;
   public static final int FALSE = 14;
-  public static final int INTEGER_LITERAL = 35;
-  public static final int IDENTIFIER = 34;
+  public static final int INTEGER_LITERAL = 38;
+  public static final int IDENTIFIER = 37;
   public static final String[] terminalNames = new String[] {
   "EOF",
   "error",
@@ -73,6 +72,8 @@ public class sym {
   "MINUS",
   "BECOMES",
   "MULTIPLIES",
+  "AND",
+  "NOT",
   "LPAREN",
   "RPAREN",
   "SEMICOLON",
@@ -83,12 +84,9 @@ public class sym {
   "COMMA",
   "RIGHTANGLEBRACKET",
   "LEFTANGLEBRACKET",
-  "IDENTIFIER",
-  "INTEGER_LITERAL",
-  "MULTICOMMENT",
-  "AND",
   "PERIOD",
-  "EXCLAIMATION"
+  "IDENTIFIER",
+  "INTEGER_LITERAL"
   };
 }
 

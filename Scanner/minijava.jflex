@@ -111,11 +111,15 @@ eol = [\r\n]
 white = {eol}|[ \t]
 new = letter
 start= [/\*|//]
-end = [\*/]]
-commentcontent= (white|.)
-octal = [0-7][1-7]+
-hex = [0-9]|[a-fA-F]
-int_literal= [^[+-]?\d*]
+//end = [\*/]]
+//commentcontent= (white|.)
+//octal = [0-7][1-7]+
+//hex = [0-9]|[a-fA-F]
+//int_literal= [^[+-]?\d*]
+
+comment_start = "/*"
+comment_end = "*/"
+comment_block = {comment_start}[^*]*("*"([^*/][^*]*)?)*{comment_end}
 
 
 
@@ -150,6 +154,8 @@ int_literal= [^[+-]?\d*]
 "*" { return symbol(sym.MULTIPLIES);}
 "<" { return symbol(sym.LEFTANGLEBRACKET);}
 ">" { return symbol(sym.RIGHTANGLEBRACKET);}
+"&&" {return symbol (sym.AND);}
+"!" {return symbol (sym.NOT);}
 
 
 /* delimiters */
@@ -161,6 +167,7 @@ int_literal= [^[+-]?\d*]
 "[" { return symbol(sym.LEFTBRACKET);}
 "]" { return symbol(sym.RIGHTBRACKET);}
 "," { return symbol(sym.COMMA);}
+"." {return symbol (sym.PERIOD);}
 
 
 /* identifiers */
@@ -172,16 +179,12 @@ int_literal= [^[+-]?\d*]
 	return symbol(sym.INTEGER_LITERAL, yytext());
 }
 
-/* expressions */
-"&&" {return symbol (sym.AND);}
-"." {return symbol (sym.PERIOD);}
-"!" {return symbol (sym.EXCLAIMATION);}
-
 /* whitespace */
 {white}+ { /* ignore whitespace */ }
 
 /* comments */
-{start}(commentcontent)*{end} {/*ignore commentcontent */}
+//{start}(commentcontent)*{end} {/*ignore commentcontent */}
+{comment_block} {/*ignore commentcontent */}
 {start}.* {/* ignore commentcontent */}
 
 

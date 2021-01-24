@@ -33,22 +33,15 @@ terminal INT;
 terminal BOOLEAN;
 
 /* operators */
-terminal PLUS, MINUS, BECOMES, MULTIPLIES;
+terminal PLUS, MINUS, BECOMES, MULTIPLIES, AND, NOT;
 
 /* delimiters */
 terminal LPAREN, RPAREN, SEMICOLON, LEFTCURLYBRACKET, RIGHTCURLYBRACKET, LEFTBRACKET, RIGHTBRACKET,COMMA, RIGHTANGLEBRACKET, LEFTANGLEBRACKET;
+terminal PERIOD;
 
 /* identifiers */
 terminal String IDENTIFIER;
 terminal Integer INTEGER_LITERAL;
-terminal String MULTICOMMENT;
-
-
-/* expressions */
-terminal AND;
-terminal PERIOD;
-terminal EXCLAIMATION;
-
 
 
 /* Nonterminals (constructed by parser): */
