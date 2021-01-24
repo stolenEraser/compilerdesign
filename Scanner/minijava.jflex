@@ -142,10 +142,12 @@ comment_block = {comment_start}[^*]*("*"([^*/][^*]*)?)*{comment_end}
 "true" {return symbol (sym.TRUE);}
 "false" {return symbol (sym.FALSE);}
 "new" {return symbol (sym.NEW);}
-"string" {return symbol (sym.STRING);}
+"String" {return symbol (sym.STRING);}
 "System.out.println" {return symbol (sym.PRINTLN);}
 "int" {return symbol (sym.INT);}
 "boolean" {return symbol (sym.BOOLEAN);}
+"length" {return symbol (sym.LENGTH);}
+"extends" {return symbol (sym.EXTENDS);}
 
 /* operators */
 "+" { return symbol(sym.PLUS); }

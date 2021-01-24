@@ -31,6 +31,8 @@ terminal STRING;
 terminal PRINTLN;
 terminal INT;
 terminal BOOLEAN;
+terminal LENGTH;
+terminal EXTENDS;
 
 /* operators */
 terminal PLUS, MINUS, BECOMES, MULTIPLIES, AND, NOT;

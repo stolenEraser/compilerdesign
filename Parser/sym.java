@@ -8,45 +8,47 @@ package Parser;
 /** CUP generated class containing symbol constants. */
 public class sym {
   /* terminals */
-  public static final int LEFTBRACKET = 31;
+  public static final int LEFTBRACKET = 33;
   public static final int DISPLAY = 2;
-  public static final int PERIOD = 36;
-  public static final int RIGHTBRACKET = 32;
-  public static final int LPAREN = 26;
+  public static final int PERIOD = 38;
+  public static final int RIGHTBRACKET = 34;
+  public static final int LPAREN = 28;
   public static final int INT = 18;
   public static final int PRINTLN = 17;
-  public static final int MINUS = 21;
+  public static final int MINUS = 23;
   public static final int STATIC = 3;
-  public static final int RPAREN = 27;
-  public static final int RIGHTCURLYBRACKET = 30;
-  public static final int NOT = 25;
-  public static final int SEMICOLON = 28;
-  public static final int AND = 24;
-  public static final int RIGHTANGLEBRACKET = 34;
-  public static final int COMMA = 33;
+  public static final int RPAREN = 29;
+  public static final int RIGHTCURLYBRACKET = 32;
+  public static final int NOT = 27;
+  public static final int SEMICOLON = 30;
+  public static final int AND = 26;
+  public static final int RIGHTANGLEBRACKET = 36;
+  public static final int COMMA = 35;
   public static final int CLASS = 7;
-  public static final int PLUS = 20;
+  public static final int PLUS = 22;
   public static final int MAIN = 5;
   public static final int IF = 8;
   public static final int THIS = 11;
-  public static final int MULTIPLIES = 23;
+  public static final int MULTIPLIES = 25;
   public static final int EOF = 0;
   public static final int BOOLEAN = 19;
   public static final int RETURN = 12;
   public static final int TRUE = 13;
   public static final int NEW = 15;
   public static final int error = 1;
-  public static final int BECOMES = 22;
+  public static final int BECOMES = 24;
   public static final int VOID = 4;
   public static final int ELSE = 9;
   public static final int WHILE = 10;
   public static final int PUBLIC = 6;
+  public static final int EXTENDS = 21;
   public static final int STRING = 16;
-  public static final int LEFTANGLEBRACKET = 35;
-  public static final int LEFTCURLYBRACKET = 29;
+  public static final int LEFTANGLEBRACKET = 37;
+  public static final int LEFTCURLYBRACKET = 31;
   public static final int FALSE = 14;
-  public static final int INTEGER_LITERAL = 38;
-  public static final int IDENTIFIER = 37;
+  public static final int LENGTH = 20;
+  public static final int INTEGER_LITERAL = 40;
+  public static final int IDENTIFIER = 39;
   public static final String[] terminalNames = new String[] {
   "EOF",
   "error",
@@ -68,6 +70,8 @@ public class sym {
   "PRINTLN",
   "INT",
   "BOOLEAN",
+  "LENGTH",
+  "EXTENDS",
   "PLUS",
   "MINUS",
   "BECOMES",
