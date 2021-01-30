@@ -153,7 +153,7 @@ comment_block = {comment_start}[^*]*("*"([^*/][^*]*)?)*{comment_end}
 "+" { return symbol(sym.PLUS); }
 "=" { return symbol(sym.BECOMES); }
 "-" { return symbol(sym.MINUS);}
-"*" { return symbol(sym.MULTIPLIES);}
+"*" { return symbol(sym.MULT);}
 "<" { return symbol(sym.LEFTANGLEBRACKET);}
 ">" { return symbol(sym.RIGHTANGLEBRACKET);}
 "&&" {return symbol (sym.AND);}

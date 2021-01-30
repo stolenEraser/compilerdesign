@@ -10,6 +10,7 @@ public class sym {
   /* terminals */
   public static final int LEFTBRACKET = 33;
   public static final int DISPLAY = 2;
+  public static final int MULT = 24;
   public static final int PERIOD = 38;
   public static final int RIGHTBRACKET = 34;
   public static final int LPAREN = 28;
@@ -29,14 +30,13 @@ public class sym {
   public static final int MAIN = 5;
   public static final int IF = 8;
   public static final int THIS = 11;
-  public static final int MULTIPLIES = 25;
   public static final int EOF = 0;
   public static final int BOOLEAN = 19;
   public static final int RETURN = 12;
   public static final int TRUE = 13;
   public static final int NEW = 15;
   public static final int error = 1;
-  public static final int BECOMES = 24;
+  public static final int BECOMES = 25;
   public static final int VOID = 4;
   public static final int ELSE = 9;
   public static final int WHILE = 10;
@@ -74,8 +74,8 @@ public class sym {
   "EXTENDS",
   "PLUS",
   "MINUS",
+  "MULT",
   "BECOMES",
-  "MULTIPLIES",
   "AND",
   "NOT",
   "LPAREN",

@@ -877,7 +877,7 @@ public final class scanner implements java_cup.runtime.Scanner {
             }
           case 48: break;
           case 6: 
-            { return symbol(sym.MULTIPLIES);
+            { return symbol(sym.MULT);
             }
           case 49: break;
           case 7: 

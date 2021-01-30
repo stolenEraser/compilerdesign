@@ -212,16 +212,19 @@ public class PrettyPrintVisitor implements Visitor {
 		if ((n.s1 instanceof Block) == false) {
 			decTab();
 		}
-		printTab();
-		System.out.print("else ");
-		if ((n.s2 instanceof Block) == false) {
-			System.out.println();
-			incTab();
+		if( n.s2 != null) {
+			printTab();
+			System.out.print("else ");
+			if ((n.s2 instanceof Block) == false) {
+				System.out.println();
+				incTab();
+			}
+			n.s2.accept(this);
+			if ((n.s2 instanceof Block) == false) {
+				decTab();
+			}
 		}
-		n.s2.accept(this);
-		if ((n.s2 instanceof Block) == false) {
-			decTab();
-		}
+		
 	}
 
 	// Exp e;

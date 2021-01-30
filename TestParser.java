@@ -19,6 +19,8 @@ public class TestParser {
 	    // replace p.parse() with p.debug_parse() in next line to see trace of
 	    // parser shift/reduce actions during parse
             root = p.parse();
+            
+            
             List<Statement> program = (List<Statement>)root.value;
             for (Statement statement: program) {
                 statement.accept(new PrettyPrintVisitor());
